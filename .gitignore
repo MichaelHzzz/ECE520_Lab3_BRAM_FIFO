@@ -1,0 +1,7 @@
+/vivado_project/
+/vivado_demo/
+.Xil/
+*.jou
+*.log
+!/reports/synthesis.log
+__pycache__/
