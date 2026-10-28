@@ -72,4 +72,8 @@ report for review.
 
 ## References
 
-- ECE 520/L Lab 3 instructions and course lecture notes.
+- ECE 520 lecture notes and Lab 3 instructions, California State University, Northridge.
+- ChipVerify, “Verilog Tutorial.”
+  https://chipverify.com/verilog/verilog-tutorial
+- Sutherland HDL, “Verilog 2001 Quick Reference Guide.”
+  https://sutherland-hdl.com/pdfs/verilog_2001_ref_guide.pdf
