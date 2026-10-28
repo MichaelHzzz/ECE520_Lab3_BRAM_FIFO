@@ -13,24 +13,6 @@ count of the words currently stored.
 Writes are rejected when the FIFO is full, and reads are rejected when
 it is empty. When a read and write both succeed, the count stays unchanged.
 
-## Block Diagram
-
-```mermaid
-flowchart LR
-    D["data_in — 16 bits"] --> M["BRAM — 32 × 16 bits"]
-    W["write_enable"] --> C["Control logic"]
-    R["read_enable"] --> C
-    K["clk and srst"] --> C
-    C --> WP["Write pointer"]
-    C --> RP["Read pointer"]
-    WP --> M
-    RP --> M
-    M --> P["Read pipeline"]
-    C --> P
-    P --> O["data_out and valid"]
-    C --> S["Word count and status flags"]
-```
-
 ## Read Timing
 
 With the default READ_LATENCY = 1, an accepted read loads the first
